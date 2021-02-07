@@ -1,7 +1,33 @@
 #!/bin/php
 <?php declare(strict_types=1);
 
+
+if(!function_exists('writeln')){
+
+
+    function writeln(string $line = ""): void
+    {
+        print $line.PHP_EOL;
+    }
+}
+
 $loader = require dirname(__DIR__) . "/vendor" . "/autoload.php";
 
 print "PHP Console Syncore Development [Version: v1.0.8 ]".PHP_EOL;
 print "(c) 2021 Syncorephp. All rights reserved.".PHP_EOL.PHP_EOL;
+
+$i_console = readline("  $ php: ");
+
+if(!isset($i_console) or empty($i_console)) {
+    print "ERROR: ".var_dump($i_console);
+} else {
+    switch($i_console) {
+        case 'create':
+            writeln("create project-root");
+            break;
+        default:
+            writeln("bin/Console - Syncore PHP Framework tool");
+            break;
+    };
+}
+

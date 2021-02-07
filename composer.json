@@ -12,14 +12,14 @@
       "psr/container": "~v1.0",
       "psr/event-dispatcher": "~v1.0",
       "psr/log": "~v1.1",
-      "symfony/yaml": "~v5.0",
+      "symfony/yaml": "^3.0 || ^4.0 || ^5.0",
       "twig/twig": "~v2.0 || ~v3.0",
-      "vlucas/phpdotenv": "~v5.0"
+      "vlucas/phpdotenv": "^3.0 || ^4.0 || ^5.0"
    },
    "require-dev": {
-      "flip/whoops": "~v2.9",
+      "filp/whoops": "2.9.2",
       "phpunit/phpunit": "~v9.5",
-      "symfony/var-dumper": "~v5.0"
+      "symfony/var-dumper": "^2.6 || ^3.0 || ^4.0 || ^5.0"
    },
    "autoload": {
       "psr-4": {
@@ -27,8 +27,9 @@
       }
    },
    "autoload-dev": {
+      "files": ["tests/bootstrap.php"],
       "psr-4": {
-         "Tests\\": "tests/phpunit"
+         "Tests\\": "tests/phpunit/"
       }
    },
    "prefer-stable": true,
