@@ -3,4 +3,5 @@
 
 $loader = require dirname(__DIR__) . "/vendor" . "/autoload.php";
 
-
+print "PHP Console Syncore Development [Version: v1.0.8 ]".PHP_EOL;
+print "(c) 2021 Syncorephp. All rights reserved.".PHP_EOL.PHP_EOL;
