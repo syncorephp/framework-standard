@@ -1,0 +1,8 @@
+*           text=auto
+*.text      text
+*.vcproj    text eol=crlf
+*.sh        text eol=lf
+*.jpg       -text
+
+*.php       php=auto
+phpunit.xml.dist text

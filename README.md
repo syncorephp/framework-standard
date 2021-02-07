@@ -1,2 +1,9 @@
-# framework-standard
-The PHP Framework libs
+The PHP Framework standard library:
+=====================================
+
+Installation:
+-------------
+
+```bash
+    $ /bin/env composer require syncore/standard-framework:*
+```
